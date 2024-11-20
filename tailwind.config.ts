@@ -25,15 +25,24 @@ const config = {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },
+
       colors: {
-        border: 'hsl(var(--border))',
+        primary: '#F7F7F7',
+        border: {
+          primary: '#007E91',
+          gray: '#D9D9D9',
+        },
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+        text: {
+          primary: '#222222',
+          neutral: '#000000',
+          link: '#006BE8',
+          primarypale: '#007E91',
+        },
+        backGround: {
+          primary: '#007E91',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -60,6 +69,7 @@ const config = {
           foreground: 'hsl(var(--card-foreground))',
         },
       },
+
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
