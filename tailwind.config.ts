@@ -32,6 +32,9 @@ const config = {
           link: '#006BE8',
           primarypale: '#007E91',
         },
+        header: {
+          primary: '#2A2A2A',
+        },
         backGround: {
           primary: '#F7F7F7',
           primarypale: '#007E91',

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 
 import { Input } from '@/components/ui/input';
+import { useToast } from '@/components/ui/use-toast';
 
 import { MessageCircleHeart } from 'lucide-react';
 
@@ -12,7 +13,7 @@ import React, { useState } from 'react';
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [checked, setChecked] = useState(false);
-
+  const { toast } = useToast();
   const title
   = '削除すると、このプロフィールの動画と分析レポートも含めて全て削除されます。よろしいですか？';
   const description
@@ -38,6 +39,10 @@ export default function Home() {
         id="1"
         onCheckedChange={(checked) => {
           setChecked(checked as boolean);
+          toast({
+            title: 'Todo added',
+            description: 'Your todo has been created',
+          });
         }}
       />
 
