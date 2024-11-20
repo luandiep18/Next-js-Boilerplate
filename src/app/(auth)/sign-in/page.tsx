@@ -23,7 +23,7 @@ export default function SignInPage() {
   return (
 
     <div className="flex flex-col items-center justify-center p-6 pt-20">
-      <div className="primary text-[32px] font-bold leading-[48px] text-text-neutral">BabyTrack</div>
+      <div className="text-[32px] font-bold leading-[48px] text-text-neutral">BabyTrack</div>
       <div className="text-center text-base font-normal text-text-primary">BabyTrackは健診を楽にし、お子さんの発達度合をチェックできるものです</div>
       <div className="mt-8 flex w-full flex-col">
         <Form {...form}>
@@ -59,8 +59,8 @@ export default function SignInPage() {
         </Form>
         <Link href="#" className="mx-auto mt-6 text-sm text-text-link !underline">パスワードをお忘れの方はこちら</Link>
         <div className="mt-8 space-y-6">
-          <Button size="default" className="bg-backGround-primary text-white">ログイン</Button>
-          <Button size="default" variant="outline" className="">ログイン</Button>
+          <Button type="submit" rounded="full" textcolor="white" size="default" background="primarypale">ログイン</Button>
+          <Button size="default" rounded="full" variant="outline" textcolor="primarypale">ログイン</Button>
         </div>
       </div>
     </div>

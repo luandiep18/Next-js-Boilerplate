@@ -16,6 +16,7 @@ html {
   margin: 0 auto;
   background: #fff;
   height: 100%;
+  position: relative;
 }
 a {
   color: inherit;
