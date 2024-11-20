@@ -3,13 +3,10 @@ import { z } from 'zod';
 
 export const env = createEnv({
   server: {
-    OPEN_AI_API_KEY_: z.string(),
+    PORT: z.string(),
   },
-  client: {
-    NEXT_PUBLIC_OPEN_AI_API_KEY: z.string(),
-  },
+  client: {},
   runtimeEnv: {
-    NEXT_PUBLIC_OPEN_AI_API_KEY: process.env.NEXT_PUBLIC_OPEN_AI_API_KEY,
-    OPEN_AI_API_KEY_: process.env.OPEN_AI_API_KEY,
+    PORT: process.env.PORT,
   },
 });
